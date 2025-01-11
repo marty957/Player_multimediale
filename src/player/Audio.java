@@ -3,7 +3,9 @@ package player;
 public class Audio extends Elemento_Multimediale implements GestioneVolume {
 
     private double durata;
-    private int volume;
+    public int volume;
+
+
 
     public Audio(String titolo, double durata, int volume) {
         super(titolo);
@@ -17,8 +19,10 @@ public class Audio extends Elemento_Multimediale implements GestioneVolume {
         System.out.println("Riproduzione audio " + titolo + " durata: " +  durata) ;
         String puntoEsclamativo ="!";
 
-            for(int i=0;i<=durata;i++){
+
+            for(int i=1;i<=durata;i++){
                 System.out.println(titolo + puntoEsclamativo.repeat(volume) );
+
             }
     }
 

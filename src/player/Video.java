@@ -1,40 +1,59 @@
-/*
 package player;
 
 public class Video extends Elemento_Multimediale implements GestioneVolume, GestioneLuminosita {
+
+
+    public double durata;
+    public int volume;
+    public int luminosita;
+
+    public Video(String titolo, double durata, int volume, int luminosita){
+        super(titolo);
+        this.durata=durata;
+        this.volume=volume;
+        this.luminosita=luminosita;
+
+    }
+
+
     @Override
-    void play() {
-        System.out.println("riproduzione audio " + getTitolo());
+    public void play() {
+        String puntoEsclamativo ="!";
+        String asterisco ="*";
+        for(int i=1;i<=durata;i++){
+            System.out.println( titolo + " "  + puntoEsclamativo.repeat(volume));
+            System.out.println(asterisco.repeat(luminosita));
+
+
+        }
+
     }
 
     @Override
-    public int abbassaVolume(int meno) {
-        return 0;
+    public void  abbassaVolume() {
+        volume--;
+        System.out.println("volume: " + volume);
     }
 
     @Override
-    public int alzaVolume(int piu) {
-        return 0;
+    public void alzaVolume() {
+        volume++;
+        System.out.println("volume: " + volume);
     }
 
     @Override
-    public int abbassaVolume() {
-        return 0;
+    public void aumentaLuminosita() {
+        luminosita++;
+        System.out.println("luminosità: " + luminosita);
     }
 
     @Override
-    public int alzaVolume() {
-        return 0;
-    }
+    public void diminuisciLuminosità() {
 
-    @Override
-    public int aumentaLuminosita() {
-        return 0;
-    }
+        luminosita--;
 
-    @Override
-    public int diminuisciLuminosità() {
-        return 0;
+        System.out.println("luminosità: " +  luminosita);
+
+
     }
 }
-*/

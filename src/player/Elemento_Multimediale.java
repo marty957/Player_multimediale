@@ -10,13 +10,4 @@ public abstract class Elemento_Multimediale {
 
     }
 
-
-    public String getTitolo(){
-        return titolo;
-    }
-
-
-
-
-
 }
