@@ -1,6 +1,6 @@
 package player;
 
-public interface Luminosita {
+public interface GestioneLuminosita {
     int aumentaLuminosita();
     int diminuisciLuminosità();
 }

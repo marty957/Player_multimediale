@@ -1,9 +1,20 @@
+/*
 package player;
 
-public class Video extends Elemento_Multimediale implements AudioRiproducibile,Luminosita{
+public class Video extends Elemento_Multimediale implements GestioneVolume, GestioneLuminosita {
     @Override
-    public boolean play() {
-        return false;
+    void play() {
+        System.out.println("riproduzione audio " + getTitolo());
+    }
+
+    @Override
+    public int abbassaVolume(int meno) {
+        return 0;
+    }
+
+    @Override
+    public int alzaVolume(int piu) {
+        return 0;
     }
 
     @Override
@@ -26,3 +37,4 @@ public class Video extends Elemento_Multimediale implements AudioRiproducibile,L
         return 0;
     }
 }
+*/

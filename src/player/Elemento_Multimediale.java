@@ -1,16 +1,18 @@
 package player;
 
-public class Elemento_Multimediale {
+public abstract class Elemento_Multimediale {
 
-   private String titolo;
-    protected int durata;
+   protected String titolo;
 
-    public Elemento_Multimediale(){
+
+    public Elemento_Multimediale(String titolo){
         this.titolo=titolo;
+
     }
-    public Elemento_Multimediale(String titolo,int durata){
-        this.titolo=titolo;
-        this.durata=durata;
+
+
+    public String getTitolo(){
+        return titolo;
     }
 
 

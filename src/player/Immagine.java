@@ -1,6 +1,6 @@
-package player;
+/*package player;
 
-public class Immagine extends Elemento_Multimediale implements Luminosita {
+public class Immagine extends Elemento_Multimediale implements GestioneLuminosita {
     @Override
     public int aumentaLuminosita() {
         return 0;
@@ -10,4 +10,4 @@ public class Immagine extends Elemento_Multimediale implements Luminosita {
     public int diminuisciLuminosità() {
         return 0;
     }
-}
+}*/
