@@ -103,6 +103,8 @@ public class Main {
                 }else if(elemento instanceof Immagine){
                     ((Immagine) elemento).show();
                 }
+            } else{
+                System.out.println("numero non valido");
             }
 
 
